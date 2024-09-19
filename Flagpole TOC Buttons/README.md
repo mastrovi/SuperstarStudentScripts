@@ -18,4 +18,6 @@ IF YOU WANT THEM SEPARATE FOR SOME REASON:
 5. Profit
 
 
-<i>This was made by Molly Wilson, published Sept. 19 2024. This is not yours unless you are me. Then it is yours. Hi, me.</i>
+<i>This was made by Molly Wilson, published Sept. 19 2024. Email me at maw17856@uga.edu if you have any problems or suggestions. </i>
+
+<i>This is not yours unless you are me. Then it is yours. Hi, me.</i>
