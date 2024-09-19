@@ -4,7 +4,14 @@ There is also a bar to type a custom headline, which you can then add with the b
 
 TO USE THIS:
 ------
-1. Download both the .html and .js files
+1. Download the tocbuttons.html file
+2. Open something that can run HTML or double click it that usually does it
+3. If you do not know how to do that, Google how to run an HTML file
+4. Profit
+
+IF YOU WANT THEM SEPARATE FOR SOME REASON:
+-----
+1. Download both the buttondoc.html and buttonfiles.js files
 2. Open some sort of program that can run both of them at the same time. This is what I used to create them: <https://jsfiddle.net/>
 3. Add them to their respective areas. This will depend on what you use, but if you are using <b>JSFiddle</b> (the above link), there are sections to import both into. HTML and JavaScript should be the only sections you modify (and modify them by pasting their respective scripts).
 4. <b>Run</b> the program
