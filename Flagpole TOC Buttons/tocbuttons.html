@@ -1,0 +1,154 @@
+    <!-- The text box that the headlines appear in; copy and cut out to get them. -->
+    <textarea id="message" rows="5" cols="30"></textarea>
+
+    <!-- The buttons that show up on screen. -->
+    <input type="button" value="Pub/Letters/tom/City pages/world" id="Lettersbutton" />
+    <input type="button" value="Comment" id="combutton" />
+    <input type="button" value="Hip mamma" id="hipbutton" />
+    <input type="button" value="Out there" id="outbutton" />
+    <input type="button" value="Art notes" id="artbutton" />
+    <input type="button" value="Theatre notes" id="theabutton" />
+    <input type="button" value="Movie dope" id="moviedbutton" />
+    <input type="button" value="Movie pick" id="moviepbutton" />
+    <input type="button" value="Grub/special" id="grubbutton" />
+    <input type="button" value="Monkeys" id=monkeybutton />
+    <input type="button" value="Lost picture show" id=lostbutton />
+    <input type="button" value="ABC" id="abcbutton" />
+    <input type="button" value="Other voices" id="voibutton" />
+    <input type="button" value="Book rev." id="revbutton" />
+    <input type="button" value="Redux nation" id="redbutton" />
+    <input type="button" value="Record reviews" id="recbutton" />
+    <input type="button" value="Spotlight" id="spotbutton" />
+    <input type="button" value="Beat in time" id="beatbutton" />
+    <input type="button" value="Liner notes" id="linbutton" />
+    <input type="button" value="Threats&... ending3" id="endbutton" />
+    <input type="text" value="" onkeypress="clickPress(event)" id="inp" />
+    <input type="button" value="Enter custom headline" id="custombutton" />
+    <input type="button" value="Clear" id="clearbutton" class="bold-button" />
+
+
+    <!-- Makes the 'clear' button bold -->
+<style>
+        .bold-button {
+            font-weight: bold;
+        }
+    </style>
+    <!-- I don't remember if this does anything. Delete? -->
+<style>
+        .wrap{
+          word-wrap: break-word;
+          word-break: break-all;
+          width: 1250px
+         }
+     </style>
+<script>
+  // Establishes the text area so the buttons can reference it.
+  const textarea = document.getElementById('message');
+  textarea.value += '';
+
+  // ✅ Append text on button click template:
+  //btn.addEventListener('click', function handleClick() {
+   // textarea.value += 'Pub notes -- ';
+  //});
+
+  //Just all the buttons really
+  Lettersbutton.addEventListener('click', function handleClick() {
+    textarea.value += 'Pub notes -- Letters -- Tom the dancing bug -- City pages -- This modern world -- ';
+  });
+
+  monkeybutton.addEventListener('click', function handleClick() {
+    textarea.value += 'A million monkeys -- ';
+  });
+
+  outbutton.addEventListener('click', function handleClick() {
+    textarea.value += 'Out there! -- ';
+  });
+
+  combutton.addEventListener('click', function handleClick() {
+    textarea.value += 'Comment -- ';
+  });
+
+  theabutton.addEventListener('click', function handleClick() {
+    textarea.value += 'Theatre notes -- ';
+  });
+
+  voibutton.addEventListener('click', function handleClick() {
+    textarea.value += 'Other voices -- ';
+  });
+
+  moviedbutton.addEventListener('click', function handleClick() {
+    textarea.value += 'Movie dope -- ';
+  });
+
+  redbutton.addEventListener('click', function handleClick() {
+    textarea.value += 'Redux nation -- ';
+  });
+
+  moviepbutton.addEventListener('click', function handleClick() {
+    textarea.value += 'Movie pick -- ';
+  });
+
+  artbutton.addEventListener('click', function handleClick() {
+    textarea.value += 'Art notes -- ';
+  });
+
+  grubbutton.addEventListener('click', function handleClick() {
+    textarea.value += 'Grub notes -- Daily special -- ';
+  });
+
+  abcbutton.addEventListener('click', function handleClick() {
+    textarea.value += 'ABC a is playing at b on c -- ABC@ATL -- ';
+  });
+  //ABC@ATL -- 
+  recbutton.addEventListener('click', function handleClick() {
+    textarea.value += 'Record reviews -- ';
+  });
+
+  lostbutton.addEventListener('click', function handleClick() {
+    textarea.value += 'Lost picture show -- ';
+  });
+
+  linbutton.addEventListener('click', function handleClick() {
+    textarea.value += 'Liner notes -- ';
+  });
+
+  endbutton.addEventListener('click', function handleClick() {
+    textarea.value += 'Threats & promises -- Comics -- Reality check';
+  });
+
+  beatbutton.addEventListener('click', function handleClick() {
+    textarea.value += 'That beat in time -- ';
+  });
+
+  spotbutton.addEventListener('click', function handleClick() {
+    textarea.value += 'Spotlight -- ';
+  });
+
+  clearbutton.addEventListener('click', function handleClick() {
+    textarea.value = '';
+  });
+
+  revbutton.addEventListener('click', function handleClick() {
+    textarea.value += 'Book rev. -- ';
+  });
+
+  custombutton.addEventListener('click', function handleClick(){
+    textarea.value += (document.getElementById("inp").value) + " -- ";
+    document.getElementById("inp").value = "";
+  });
+
+  hipbutton.addEventListener('click', function handleClick(){
+    textarea.value += "Hip mamma -- ";
+  });
+
+  //Pressing enter also submits the custom headline instead of just pressing the button.
+  function clickPress(event){
+
+    if (event.key == "Enter"){
+      textarea.value += (document.getElementById("inp").value) + " -- ";
+      document.getElementById("inp").value = "";
+    }
+  }
+
+  //made by Molly Wilson 9/19/24. Do not claim 
+</script>
